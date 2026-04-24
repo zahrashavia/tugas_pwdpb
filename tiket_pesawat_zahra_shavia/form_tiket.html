@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan Tiket - SkyLine</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #c344e0; padding: 20px; }
+        .form-box { max-width: 500px; margin: 40px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h3 { color: #2d3748; margin-bottom: 25px; border-left: 5px solid #c344e0; padding-left: 10px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; color: #4a5568; font-size: 14px; }
+        select, input { width: 100%; padding: 10px; border: 1px solid #c344e0; border-radius: 6px; box-sizing: border-box; }
+        .btn { background: #c344e0; color: white; border: none; padding: 15px; width: 100%; border-radius: 6px; font-size: 16px; cursor: pointer; margin-top: 10px; }
+        .btn:hover { background: #c344e0; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h3>Detail Penerbangan</h3>
+        <form action="hasil_pemesanan.html">
+            <div class="form-group">
+                <label>Dari</label>
+                <select>
+                    <option>Padang (PDG)</option>
+                    <option>Jakarta (CGK)</option>
+                    <option>Medan (KNO)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Tujuan</label>
+                <select>
+                    <option>Bandung (BDO)</option>
+                    <option>Surabaya (SUB)</option>
+                    <option>Bali (DPS)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Tanggal Keberangkatan</label>
+                <input type="date" required>
+            </div>
+            <div class="form-group">
+                <label>Penumpang</label>
+                <input type="number" min="1" value="1">
+            </div>
+            <button type="submit" class="btn">Cari Tiket Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
